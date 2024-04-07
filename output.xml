@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-07T18:18:04.044995" rpa="false" schemaversion="5">
+<suite id="s1" name="validationTest" source="D:\robot-validate-test\validationTest.robot">
+<test id="s1-t1" name="Test 01" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:04.312022" level="INFO">Opening browser 'Edge' to base url 'https://react-form-for-robot.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-07T18:18:04.312022" elapsed="2.785732"/>
+</kw>
+<kw name="Input Thai Name">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:07.097754" level="INFO">Typing text 'กิตติพัฒน์' into text field 'id=fnameTH'.</msg>
+<arg>id=fnameTH</arg>
+<arg>${THNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:07.097754" elapsed="0.266261"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:07.364015" level="INFO">Typing text 'ชูวงษ์วาลย์' into text field 'id=lnameTH'.</msg>
+<arg>id=lnameTH</arg>
+<arg>${THLASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:07.364015" elapsed="0.170497"/>
+</kw>
+<arg>${THVARIABLES1}[name]</arg>
+<arg>${THVARIABLES1}[lastname]</arg>
+<status status="PASS" start="2024-04-07T18:18:07.097754" elapsed="0.436758"/>
+</kw>
+<kw name="Input English Name">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:07.534512" level="INFO">Typing text 'Kittipat' into text field 'id=fnameEN'.</msg>
+<arg>id=fnameEN</arg>
+<arg>${ENNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:07.534512" elapsed="0.134697"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:07.669209" level="INFO">Typing text 'Choowongwan' into text field 'id=lnameEN'.</msg>
+<arg>id=lnameEN</arg>
+<arg>${ENLASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:07.669209" elapsed="0.200014"/>
+</kw>
+<arg>${ENVARIABLES1}[name]</arg>
+<arg>${ENVARIABLES1}[lastname]</arg>
+<status status="PASS" start="2024-04-07T18:18:07.534512" elapsed="0.334711"/>
+</kw>
+<kw name="Select Date of Birth">
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:07.869223" level="INFO">Selecting options from selection list 'id=date' by index 11.</msg>
+<arg>id=date</arg>
+<arg>11</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-04-07T18:18:07.869223" elapsed="0.289123"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:08.165649" level="INFO">Selecting options from selection list 'id=month' by index 4.</msg>
+<arg>id=month</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-04-07T18:18:08.165649" elapsed="0.174158"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:08.340837" level="INFO">Selecting options from selection list 'id=year' by index 5.</msg>
+<arg>id=year</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-04-07T18:18:08.339807" elapsed="0.186735"/>
+</kw>
+<status status="PASS" start="2024-04-07T18:18:07.869223" elapsed="0.660977"/>
+</kw>
+<kw name="Input Person ID">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:08.534196" level="INFO">Typing text '0000000000000' into text field 'id=personID'.</msg>
+<arg>id=personID</arg>
+<arg>${PERSONID}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:08.534196" elapsed="0.317094"/>
+</kw>
+<arg>${PERSONID}[id1]</arg>
+<status status="PASS" start="2024-04-07T18:18:08.530200" elapsed="0.321090"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:08.851290" level="INFO">Typing text 'Ex000000' into text field 'id=passwd'.</msg>
+<arg>id=passwd</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:08.851290" elapsed="0.233329"/>
+</kw>
+<arg>${PASSWORDS}[pass1]</arg>
+<status status="PASS" start="2024-04-07T18:18:08.851290" elapsed="0.234466"/>
+</kw>
+<kw name="Input Email &amp; Phone">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:09.086681" level="INFO">Typing text '0000000000' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:09.086681" elapsed="0.231978"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:09.318659" level="INFO">Typing text '654259023@webmail.npru.ac.th' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-07T18:18:09.318659" elapsed="0.282888"/>
+</kw>
+<arg>${PHONE}[phone1]</arg>
+<arg>${EMAIL}[email2]</arg>
+<status status="PASS" start="2024-04-07T18:18:09.086681" elapsed="0.514866"/>
+</kw>
+<kw name="Page Should Contain Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:09.626626" level="INFO">Current page contains checkbox 'id=accept'.</msg>
+<arg>id=accept</arg>
+<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
+<status status="PASS" start="2024-04-07T18:18:09.601547" elapsed="0.025079"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-07T18:18:09.626626" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/form/div[4]/div/label'.</msg>
+<msg time="2024-04-07T18:18:10.916620" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-07T18:18:10.916620" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (208, 1003)
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F6B85B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B14AB2+220434]
+	(No symbol) [0x00007FF7F693DCD7]
+	(No symbol) [0x00007FF7F698ADC6]
+	(No symbol) [0x00007FF7F6989033]
+	(No symbol) [0x00007FF7F6986D48]
+	(No symbol) [0x00007FF7F6985D60]
+	(No symbol) [0x00007FF7F697A856]
+	(No symbol) [0x00007FF7F69A3F2A]
+	(No symbol) [0x00007FF7F697A0E7]
+	(No symbol) [0x00007FF7F6979FAD]
+	(No symbol) [0x00007FF7F69A4210]
+	(No symbol) [0x00007FF7F697A0E7]
+	(No symbol) [0x00007FF7F69BD149]
+	(No symbol) [0x00007FF7F69A3B93]
+	(No symbol) [0x00007FF7F697960E]
+	(No symbol) [0x00007FF7F69787CC]
+	(No symbol) [0x00007FF7F69791C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F6D358FC+1052188]
+	(No symbol) [0x00007FF7F69EFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6A9150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6A88E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F6D34865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B1D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B185B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B186EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B0FEE1+201025]
+	BaseThreadInitThunk [0x00007FFE8C00257D+29]
+	RtlUserThreadStart [0x00007FFE8DECAA58+40]
+</msg>
+<arg>xpath=//*[@id="root"]/div/form/div[4]/div/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-07T18:18:09.626626" elapsed="1.305853">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (208, 1003)
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F6B85B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B14AB2+220434]
+	(No symbol) [0x00007FF7F693DCD7]
+	(No symbol) [0x00007FF7F698ADC6]
+	(No symbol) [0x00007FF7F6989033]
+	(No symbol) [0x00007FF7F6986D48]
+	(No symbol) [0x00007FF7F6985D60]
+	(No symbol) [0x00007FF7F697A856]
+	(No symbol) [0x00007FF7F69A3F2A]
+	(No symbol) [0x00007FF7F697A0E7]
+	(No symbol) [0x00007FF7F6979FAD]
+	(No symbol) [0x00007FF7F69A4210]
+	(No symbol) [0x00007FF7F697A0E7]
+	(No symbol) [0x00007FF7F69BD149]
+	(No symbol) [0x00007FF7F69A3B93]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7F69791C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F6D358FC+1052188]
+	(No symbol) [0x00007FF7F69EFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6A9150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6A88E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F6D34865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B1D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B185B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B186EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B0FEE1+201025]
+	BaseThreadInitThunk [0x00007FFE8C00257D+29]
+	RtlUserThreadStart [0x00007FFE8DECAA58+40]</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=submit-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-07T18:18:10.932479" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-07T18:18:04.312022" elapsed="6.620457">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (208, 1003)
+  (Session info: MicrosoftEdge=123.0.2420.81)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F6B85B82+59842]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B14AB2+220434]
+	(No symbol) [0x00007FF7F693DCD7]
+	(No symbol) [0x00007FF7F698ADC6]
+	(No symbol) [0x00007FF7F6989033]
+	(No symbol) [0x00007FF7F6986D48]
+	(No symbol) [0x00007FF7F6985D60]
+	(No symbol) [0x00007FF7F697A856]
+	(No symbol) [0x00007FF7F69A3F2A]
+	(No symbol) [0x00007FF7F697A0E7]
+	(No symbol) [0x00007FF7F6979FAD]
+	(No symbol) [0x00007FF7F69A4210]
+	(No symbol) [0x00007FF7F697A0E7]
+	(No symbol) [0x00007FF7F69BD149]
+	(No symbol) [0x00007FF7F69A3B93]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7F69791C1]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F6D358FC+1052188]
+	(No symbol) [0x00007FF7F69EFFC6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6A9150C+37916]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6A88E95+3493]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F6D34865+1047941]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B1D2C1+255265]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B185B4+235540]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B186EB+235851]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6B0FEE1+201025]
+	BaseThreadInitThunk [0x00007FFE8C00257D+29]
+	RtlUserThreadStart [0x00007FFE8DECAA58+40]</status>
+</test>
+<status status="FAIL" start="2024-04-07T18:18:04.044995" elapsed="6.887484"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="validationTest">validationTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
